@@ -1,27 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              "text-primary": "#1F242E",
-              "text-secondary": "#475561",
-              primary: "#2B256D",
-              primary: "#939391",
-            },
-          },
-        },
-      };
-    </script>
     <link rel="stylesheet" href="style.css" />
     <title>شركة قواعد التشغيل المحدودة</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold underline">شركة قواعد التشغيل المحدودة</h1>
+    <main>
+      <div class="overlay">
+        <nav class="container">
+          <img src="./assets/images/logo.svg" alt="logo" class="logo" />
+          <div id="nav-links" class="pages">
+            <button id="close-burger" class="burger">
+              <img src="./assets//images/burger-close.svg" alt="close" />
+            </button>
+            <a href="#" class="active">الرئيسية</a>
+            <a href="#">من نحن</a>
+            <a href="#">خدماتنا</a>
+            <a href="#">شركاء النجاح</a>
+            <a href="#">تواصل معنا</a>
+          </div>
+          <a href="#" class="btn active">تواصل معنا</a>
+          <button id="open-burger" class="burger">
+            <img src="./assets//images/burger-open.svg" alt="open" />
+          </button>
+        </nav>
+        <div class="hero">
+          <h1 class="text-white text-[56px] text-center">
+            شركة قواعد التشغيل المحدودة
+          </h1>
+          <p>
+            نحن نقدم خدمات تشغيل وصيانة عالية المستوى يمكن الوثوق بها تماماً
+            وسنقدم مجموعة واسعة من الخدمات للعملاء من القطاع الحكومي والقطاع
+            الخاص
+          </p>
+          <a href="#" class="btn active">تواصل معنا</a>
+        </div>
+      </div>
+    </main>
+    <section class="container description">
+      <img src="./assets/images/logo-mini.svg" alt="logo" class="logo" />
+      <h3>
+        شركة قواعد التشغيل المحدودة <br />
+        للتشغيل والصيانة
+      </h3>
+      <p>
+        نحن نقدم خدمات تشغيل وصيانة عالية المستوى يمكن الوثوق بها تماماً وسنقدم
+        مجموعة واسعة من الخدمات للعملاء من القطاع الحكومي والقطاع الخاص . خلال
+        السنوات السبع الماضية ، أصبحت شركة البدر هي المقاول المختار للعقد
+        للتنظيف والصيانة في السوق السعودي...
+      </p>
+    </section>
+    <section class="features">
+      <img
+        src="./assets/images/502abed3f3c4a64717667826b57c6f5b.jpg"
+        alt="workers"
+      />
+      <div class="features-container">
+        <div class="feature flex">
+          <img src="./assets/images/focus.svg" alt="focus" />
+          <div>
+            <h4>رؤيتنا</h4>
+            <p>
+              الريادة في مجال تقديم خدمات التشغيل والصيانة على مستوى المملكة .
+            </p>
+          </div>
+        </div>
+        <div class="feature flex">
+          <img src="./assets/images/messages.svg" alt="focus" />
+          <div>
+            <h4>رسالتنا</h4>
+            <p>
+              تعزيز قيم التفاعل والإلتزام بتلبية إحتياجات العملاء والشركاء في
+              القطاعين العام والخاص.
+            </p>
+          </div>
+        </div>
+        <div class="feature flex">
+          <img src="./assets/images/focus.svg" alt="focus" />
+          <div>
+            <h4>أهدافنا</h4>
+            <p>
+              تلبية رغبة العملاء في توفير القوى العاملة المميزة والمدربة وفق
+              إحتياجاتهم المتعددة . تزويد موظفينا بالأدوات اللازمة ، والتوجيه
+              اللازم لتلبية إحتياجات العملاء وضمان سير العمل وفق ما هو مخطط له .
+              الإلتزام بالإختيار العادل ،وتطوير القوى العاملة بتنوعها، والسعي...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="description">
+        <h3>خدماتنا</h3>
+        <p>
+          الوصول لأفضل الطرق لتطوير وتنمية الكوادر البشرية بالتنمية المستدامة
+          والمستمرة
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn active">التشغيل</a>
+          <a href="#" class="btn">التشغيل والصيانة</a>
+          <a href="#" class="btn">الصيانة</a>
+        </div>
+      </div>
+      <div id="swiper" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('assets/images/slider-1.jpg');
+              background-position: center left;
+            "
+          >
+            <div class="details">
+              <h4>الصيانة والتشغيل</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-2.jpg')"
+          >
+            <div class="details">
+              <h4>الصيانة والتنظيف</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('assets/images/slider-3.jpg');
+              background-position: center right;
+            "
+          >
+            <div class="details">
+              <h4>الضيافة</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+            </div>
+          </div>
+          <div class="swiper-slide single">
+            <div class="details">
+              <h4>صيانة ونظافة المباني والمرافق الجامعية</h4>
+              <p>
+                نحن نقدر أهمية توفير بيئة جامعية مريحة وآمنة لجميع أفراد مجتمعنا
+                الجامعي، ونعمل بجد لضمان توفير أفضل خدمات الصيانة والنظافة
+                لتلبية احتياجاتهم
+              </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-1.jpg')"
+          >
+            <div class="details">
+              <h4>الصيانة والتشغيل</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="clients container">
+      <div class="description">
+        <h3>شركاء النجاح</h3>
+        <p>
+          نحن نعتز بشركائنا في النجاح ونؤمن بأن الشراكة القوية هي أساس النمو
+          المستدام
+        </p>
+      </div>
+      <div class="swiper mySwiper-2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/client-1.png" alt="Our clients" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/client-2.png" alt="Our clients" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/client-3.png" alt="Our clients" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/client-4.png" alt="Our clients" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/client-5.png" alt="Our clients" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/client-6.png" alt="Our clients" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="header">
+          <h3>واجهتك مشكلة ؟ تريد طلب خدمة <br />تواصل معنا</h3>
+          <p>يمكنك الآن التواصل معنا عن طريق احدى الطرق التالية</p>
+        </div>
+        <div class="contacts-container">
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/images/call.svg" alt="Contact us" />
+            </div>
+            <div class="details">
+              <div>
+                <p>يمكنك الاتصال بنا</p>
+                <a href="tel:+966-50-2895555">+966-50-2895555</a>
+              </div>
+              <img src="./assets/images/arrow-link.svg" alt="Contact us" />
+            </div>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/images/email.svg" alt="Contact us" />
+            </div>
+            <div class="details">
+              <div>
+                <p>يمكنك مراسلتنا على</p>
+                <a href="mailto:info@gmail.com">info@gmail.com</a>
+              </div>
+              <img src="./assets/images/arrow-link.svg" alt="Contact us" />
+            </div>
+          </div>
+          <div class="contact">
+            <div class="icon">
+              <img src="./assets/images/location.svg" alt="Contact us" />
+            </div>
+            <div class="details">
+              <div>
+                <p>يمكنك زيارتنا في</p>
+                <a>الرياض - شارع خالد بن الوليد</a>
+              </div>
+              <img src="./assets/images/arrow-link.svg" alt="Contact us" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container">
+      <div class="info">
+        <img src="./assets/images/logo-color.svg" class="logo" alt="logo" />
+        <p>
+          نحن نقدم خدمات تشغيل وصيانة عالية المستوى يمكن الوثوق بها تماماً
+          وسنقدم مجموعة واسعة من الخدمات للعملاء من القطاع الحكومي والقطاع الخاص
+        </p>
+      </div>
+      <div class="pages">
+        <h5>عن الشركة</h5>
+        <div>
+          <a href="#">الرئيسية</a>
+          <a href="#">شركاء النجاح</a>
+          <a href="#">من نحن</a>
+          <a href="#">تواصل معنا</a>
+          <a href="#">خدماتنا</a>
+        </div>
+      </div>
+      <div class="follow-us">
+        <h5>تابعنا على</h5>
+        <div>
+          <div class="contact">
+            <img src="./assets/images/linkedin-logo.svg" alt="Linkedin" />
+            <a href="#"> لينكدان</a>
+          </div>
+          <div class="contact">
+            <img src="./assets/images/instagram-logo.svg" alt="Linkedin" />
+            <a href="#">انستجرام</a>
+          </div>
+          <div class="contact">
+            <img src="./assets/images/x-logo.svg" alt="Linkedin" />
+            <a href="#"> أكس</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="credits">
+      <div class="container">
+        <p>الحقوق محفوظة ©2024 شركة قواعد التشغيل المحدودة</p>
+        <p>صنع في <img src="./assets/images/ibtdi-logo.svg" alt="ibtdi" /></p>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
