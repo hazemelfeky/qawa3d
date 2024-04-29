@@ -26,3 +26,42 @@ var swiper2 = new Swiper(".mySwiper-2", {
     clickable: true,
   },
 });
+
+// Slider tabs
+const tabsButtonsContainer = document.getElementById("tabs-buttons");
+const tabsButtons = Array.from(
+  tabsButtonsContainer.getElementsByClassName("btn")
+);
+const swiperContainer = document.getElementById("swiper");
+
+const showSlidersTypes = (tabName) => {
+  const swiperSliders = Array.from(
+    swiperContainer.querySelectorAll(`.swiper-slide`)
+  );
+
+  const swiperSlidersOnType = Array.from(
+    swiperContainer.querySelectorAll(`[data-tab-type='${tabName}']`)
+  );
+  swiperSliders.forEach((element) => {
+    element.classList.remove("active");
+  });
+  swiperSlidersOnType.forEach((element) => {
+    element.classList.add("active");
+  });
+};
+
+tabsButtons.forEach((element) => {
+  element.addEventListener("click", () => {
+    const tabName = element.attributes["data-tab-id"].value;
+
+    showSlidersTypes(tabName);
+
+    tabsButtons.forEach((element) => {
+      element.classList.remove("active");
+    });
+
+    element.classList.add("active");
+  });
+});
+
+showSlidersTypes("operating");

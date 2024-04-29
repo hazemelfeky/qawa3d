@@ -49,6 +49,10 @@ p {
   place-content: center;
   background-color: #9393911f;
   color: #939391;
+  transition: all 0.2s ease;
+  &:hover {
+    background-color: #61615f1f;
+  }
   &.active {
     background-color: #939391;
     color: #fff;
@@ -195,6 +199,11 @@ main {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+
+    .btn {
+      border: none;
+      cursor: pointer;
+    }
   }
 
   .swiper {
@@ -209,47 +218,68 @@ main {
   .swiper-slide {
     flex: none;
     font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
+    display: none;
     align-items: end;
     height: 502px;
     width: 323px;
     position: relative;
     z-index: 2;
     background-size: cover;
+    overflow: hidden;
+
+    &.active {
+      display: flex;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(
+        0deg,
+        rgba(24, 21, 64, 1) 0%,
+        rgba(255, 255, 255, 0) 70%
+      );
+    }
 
     &::after {
       content: "";
       position: absolute;
       inset: 0;
       z-index: 1;
-      background: rgb(24, 21, 64);
-      background: linear-gradient(
-        0deg,
-        rgba(24, 21, 64, 1) 0%,
-        rgba(255, 255, 255, 0) 30%
-      );
+      transition: all 0.2s ease;
     }
 
     .details {
-      padding: 2rem;
+      padding: 1rem;
       z-index: 3;
       color: var(--second-inverse-text);
+      transition: all 0.2s ease;
       h4 {
         font-size: 24px;
+        margin-bottom: 0.25rem;
       }
       p {
+        font-size: 14px;
         color: var(--main-inverse-text);
+        margin-bottom: 1rem;
+      }
+
+      .btn {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.2s ease;
       }
     }
 
-    &.single {
-      background: #2b256d;
+    &:hover::after {
+      background: rgb(24, 21, 64);
+    }
 
-      * + * {
-        margin-bottom: 2rem;
-      }
+    &:hover .btn {
+      height: 48px;
+      margin-bottom: 2rem;
     }
   }
 }

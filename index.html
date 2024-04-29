@@ -92,39 +92,179 @@
       </div>
     </section>
     <section class="services">
-      <div class="description">
+      <div class="description container">
         <h3>خدماتنا</h3>
         <p>
           الوصول لأفضل الطرق لتطوير وتنمية الكوادر البشرية بالتنمية المستدامة
           والمستمرة
         </p>
-        <div class="buttons">
-          <a href="#" class="btn active">التشغيل</a>
-          <a href="#" class="btn">التشغيل والصيانة</a>
-          <a href="#" class="btn">الصيانة</a>
+        <div id="tabs-buttons" class="buttons">
+          <button href="#" class="btn active" data-tab-id="operating">
+            التشغيل
+          </button>
+          <button href="#" class="btn" data-tab-id="operating-maintenance">
+            التشغيل والصيانة
+          </button>
+          <button href="#" class="btn" data-tab-id="maintenance">
+            الصيانة
+          </button>
         </div>
       </div>
       <div id="swiper" class="swiper mySwiper">
         <div class="swiper-wrapper">
+          <div
+            class="swiper-slide active"
+            style="
+              background-image: url('assets/images/slider-1.jpg');
+              background-position: center left;
+            "
+            data-tab-type="operating"
+          >
+            <div class="details">
+              <h4>الصيانة والتشغيل</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide active"
+            style="background-image: url('assets/images/slider-2.jpg')"
+            data-tab-type="operating"
+          >
+            <div class="details">
+              <h4>الصيانة والتنظيف</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide active"
+            style="
+              background-image: url('assets/images/slider-3.jpg');
+              background-position: center right;
+            "
+            data-tab-type="operating"
+          >
+            <div class="details">
+              <h4>الضيافة</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide active"
+            style="background-image: url('assets/images/slider-2.jpg')"
+            data-tab-type="operating"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المباني والمرافق الجامعية</h4>
+              <p>
+                نحن نقدر أهمية توفير بيئة جامعية مريحة وآمنة لجميع أفراد مجتمعنا
+                الجامعي، ونعمل بجد لضمان توفير أفضل خدمات الصيانة والنظافة
+                لتلبية احتياجاتهم
+              </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide active"
+            style="background-image: url('assets/images/slider-1.jpg')"
+            data-tab-type="operating"
+          >
+            <div class="details">
+              <h4>الصيانة والتشغيل</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('assets/images/slider-21.jpg');
+              background-position: center left;
+            "
+            data-tab-type="operating-maintenance"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المدن</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-22.jpg')"
+            data-tab-type="operating-maintenance"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المطارات والفنادق</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url('assets/images/slider-23.jpg');
+              background-position: center right;
+            "
+            data-tab-type="operating-maintenance"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المباني والمرافق العامة</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-24.jpg')"
+            data-tab-type="operating-maintenance"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المباني والمرافق العسكرية</h4>
+              <p>
+                نحن نقدر أهمية توفير بيئة جامعية مريحة وآمنة لجميع أفراد مجتمعنا
+                الجامعي، ونعمل بجد لضمان توفير أفضل خدمات الصيانة والنظافة
+                لتلبية احتياجاتهم
+              </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-25.jpg')"
+            data-tab-type="operating-maintenance"
+          >
+            <div class="details">
+              <h4>صيانة ونظافة المشاريع والمرافق الحكومية والقطاع الخاص</h4>
+              <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
+            </div>
+          </div>
           <div
             class="swiper-slide"
             style="
               background-image: url('assets/images/slider-1.jpg');
               background-position: center left;
             "
+            data-tab-type="maintenance"
           >
             <div class="details">
               <h4>الصيانة والتشغيل</h4>
               <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
             </div>
           </div>
           <div
             class="swiper-slide"
             style="background-image: url('assets/images/slider-2.jpg')"
+            data-tab-type="maintenance"
           >
             <div class="details">
               <h4>الصيانة والتنظيف</h4>
               <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
             </div>
           </div>
           <div
@@ -133,13 +273,19 @@
               background-image: url('assets/images/slider-3.jpg');
               background-position: center right;
             "
+            data-tab-type="maintenance"
           >
             <div class="details">
               <h4>الضيافة</h4>
               <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
             </div>
           </div>
-          <div class="swiper-slide single">
+          <div
+            class="swiper-slide"
+            style="background-image: url('assets/images/slider-2.jpg')"
+            data-tab-type="maintenance"
+          >
             <div class="details">
               <h4>صيانة ونظافة المباني والمرافق الجامعية</h4>
               <p>
@@ -153,10 +299,12 @@
           <div
             class="swiper-slide"
             style="background-image: url('assets/images/slider-1.jpg')"
+            data-tab-type="maintenance"
           >
             <div class="details">
               <h4>الصيانة والتشغيل</h4>
               <p> قمنا بتطوير مجموعة واسعة من خدمات التشغيل والصيانة </p>
+              <a href="#" class="active btn">تواصل معنا</a>
             </div>
           </div>
         </div>
